@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="personName">
+<button (click)="addPerson(personName)">Add</button>
+
+<app-greeting *ngFor="let person of people" [person]="person"></app-greeting>
